@@ -52,6 +52,7 @@ footer {
 
 /* Fondo oscuro detrás de los indicadores */
 .carousel-indicators {
+    display: none;
     position: absolute;
     bottom: 15px; /* separación desde la base del carrusel */
     left: 50%;
@@ -76,6 +77,7 @@ footer {
     text-align: center;
     line-height: 25px;
     opacity: 0.8;
+  pointer-events: none; /* Evita que se haga clic */
 }
 
 /* Indicador activo */
@@ -84,3 +86,4 @@ footer {
     color: black;
     opacity: 1;
 }
+
