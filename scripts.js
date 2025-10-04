@@ -7,3 +7,4 @@ document.getElementById("fullscreen").addEventListener("click", () => {
     elem.webkitRequestFullscreen();
   }
 });
+

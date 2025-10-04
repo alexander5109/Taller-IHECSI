@@ -26,3 +26,61 @@ h2 {
 footer {
   font-size: 18px;
 }
+
+
+/* Controles del carrusel con fondo oscuro */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 50px; /* opcional, ajustar tamaño */
+    height: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.4); /* fondo negro semi-transparente */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1); /* hace que el icono blanco se vea sobre fondo oscuro */
+    width: 20px;
+    height: 20px;
+}
+
+
+/* Fondo oscuro detrás de los indicadores */
+.carousel-indicators {
+    position: absolute;
+    bottom: 15px; /* separación desde la base del carrusel */
+    left: 50%;
+    transform: translateX(-50%); /* centra horizontalmente */
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 10px;
+    display: flex;
+    gap: 5px;
+}
+
+/* Indicadores individuales */
+.carousel-indicators button {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #ccc; /* color normal */
+    border: none;
+    color: black; /* para mostrar número */
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+    line-height: 25px;
+    opacity: 0.8;
+}
+
+/* Indicador activo */
+.carousel-indicators .active {
+    background-color: #fff;
+    color: black;
+    opacity: 1;
+}
